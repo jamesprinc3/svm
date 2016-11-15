@@ -26,7 +26,8 @@ void test_Torque_Level(void)
 
 }
 
-void test_Sector_Calc_Low_Speed(void) {
+void test_Sector_Calc_Low_Speed(void) 
+{
 
 	TEST_ASSERT_EQUAL(1, sector_calc(100, 50, low_speed));
 	TEST_ASSERT_EQUAL(2, sector_calc(100, 60, low_speed));
@@ -49,6 +50,7 @@ void test_Sector_Calc_Low_Speed(void) {
 
 void test_Sector_Calc_Med_Speed(void) 
 {
+
 	TEST_ASSERT_EQUAL(1, sector_calc(100, 50, med_speed));
 	TEST_ASSERT_EQUAL(2, sector_calc(100, 60, med_speed));
 
@@ -70,6 +72,7 @@ void test_Sector_Calc_Med_Speed(void)
 
 void test_Sector_Calc_High_Speed(void) 
 {
+
 	TEST_ASSERT_EQUAL(7, sector_calc(100, 50, high_speed));
 	TEST_ASSERT_EQUAL(2, sector_calc(100, 60, high_speed));
 
@@ -87,16 +90,19 @@ void test_Sector_Calc_High_Speed(void)
 
 	TEST_ASSERT_EQUAL(12, sector_calc(100, -60, high_speed));
 	TEST_ASSERT_EQUAL(1, sector_calc(100, -50, high_speed));
+
 }
 
 void test_Speed_Region(void)
 {
+
 	TEST_ASSERT_EQUAL(0, speed_region(200 ));
 	TEST_ASSERT_EQUAL(1, speed_region(1000));
 	TEST_ASSERT_EQUAL(2, speed_region(1800));
+	
 }
 
-// void test_Set_Vec(void)
-// {
-// 	TEST_IGNORE_MESSAGE("This is difficult to test since it is a macro");
-// }
+void test_Set_Vec(void)
+{
+	TEST_IGNORE_MESSAGE("This is difficult to test since it is a macro");
+}

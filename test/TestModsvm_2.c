@@ -1,10 +1,6 @@
 #include "modsvm_2.h"
 #include "unity.h"
 
-/* These should be ignored because they are commented out in various ways:
-#include "whatever.h" 
-#include "somethingelse.h"
-*/
 
 void setUp(void)
 {
@@ -16,9 +12,6 @@ void tearDown(void)
 
 void test_Sector_Calc_General(void)
 {
-    // TEST_IGNORE_MESSAGE("This Test Was Ignored On Purpose");
-
-	//TODO: add more tests
 
     TEST_ASSERT_EQUAL(1, sector_calc(1,0));
     TEST_ASSERT_EQUAL(2, sector_calc(1,5));
@@ -55,12 +48,13 @@ void test_Sector_Calc_Borders(void)
 
 void test_Pick_Vec(void)
 {
-	// pickVec(torque_ref, flux_ref, torque, flux) 
+
 	TEST_ASSERT_EQUAL(0, pickVec(10, 10,  9,  9));
 	TEST_ASSERT_EQUAL(1, pickVec(10, 10, 11,  9));
 	TEST_ASSERT_EQUAL(2, pickVec(10, 10,  9, 11));
 	TEST_ASSERT_EQUAL(3, pickVec(10, 10, 11, 11));
 	TEST_ASSERT_EQUAL(0, pickVec(0,   0,  0,  0));
+
 }
 
 

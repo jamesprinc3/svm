@@ -1,3 +1,4 @@
+
 void modsvm_2(int u_a,
               int u_b,
               int pwm_max,
@@ -8,6 +9,11 @@ void modsvm_2(int u_a,
               int * ru_out,
               int * rv_out,
               int * rw_out);
+
+
+int pickVec(int torque_ref, int flux_ref, int torque, int flux);
+
+int sector_calc(int u_a, int u_b);
     
 //Old vector table for simple modsvm
 //Issue: selects vector which will increase torque/flux each time, doesn't just sector switching table

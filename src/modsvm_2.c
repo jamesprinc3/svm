@@ -13,7 +13,7 @@
 	} while (0)
 
 
-int pickVec(torque_ref, flux_ref, torque, flux) 
+int pickVec(int torque_ref, int flux_ref, int torque, int flux) 
 {
     int torque_diff = torque_ref - torque;
     int flux_diff   = flux_ref - flux;

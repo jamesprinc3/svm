@@ -32,6 +32,7 @@ extern void test_Sector_Calc_Low_Speed(void);
 extern void test_Sector_Calc_Med_Speed(void);
 extern void test_Sector_Calc_High_Speed(void);
 extern void test_Speed_Region(void);
+extern void test_Set_Vec(void);
 
 
 /*=======Test Reset Option=====*/
@@ -47,11 +48,12 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test/TestDsvm.c");
-  RUN_TEST(test_Torque_Level, 17);
-  RUN_TEST(test_Sector_Calc_Low_Speed, 29);
-  RUN_TEST(test_Sector_Calc_Med_Speed, 50);
-  RUN_TEST(test_Sector_Calc_High_Speed, 71);
-  RUN_TEST(test_Speed_Region, 92);
+  RUN_TEST(test_Torque_Level, 12);
+  RUN_TEST(test_Sector_Calc_Low_Speed, 24);
+  RUN_TEST(test_Sector_Calc_Med_Speed, 46);
+  RUN_TEST(test_Sector_Calc_High_Speed, 68);
+  RUN_TEST(test_Speed_Region, 91);
+  RUN_TEST(test_Set_Vec, 100);
 
   return (UnityEnd());
 }

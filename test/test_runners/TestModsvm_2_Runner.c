@@ -46,10 +46,10 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test/TestModsvm_2.c");
-  RUN_TEST(test_Sector_Calc_General, 17);
-  RUN_TEST(test_Sector_Calc_Borders, 33);
-  RUN_TEST(test_Pick_Vec, 56);
-  RUN_TEST(test_Set_Vec, 67);
+  RUN_TEST(test_Sector_Calc_General, 13);
+  RUN_TEST(test_Sector_Calc_Borders, 26);
+  RUN_TEST(test_Pick_Vec, 49);
+  RUN_TEST(test_Set_Vec, 61);
 
   return (UnityEnd());
 }

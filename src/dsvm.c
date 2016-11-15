@@ -139,12 +139,11 @@ void dsvm(int speed,
           int * rv_out,
           int * rw_out)
 {
-    static int curVec = -1;
+    //UNUSED: Can be used to pick between v0 and v7
+    // static int curVec = -1;
 
     int tmax = pwm_max;
     int ru,rv,rw;
-
-    int *vector, *strength;
 
     int speed_r = speed_region(speed);
     int sector = sector_calc(torque, flux, speed_r);
@@ -156,7 +155,7 @@ void dsvm(int speed,
         //TODO: use historic info to select best between v0 and v7
         printf("Vec Zero\n");
 
-        setVec(0);
+        // setVec(0);
         
     } else {
         int tl = 2 + torque_level(torque_ref, torque);

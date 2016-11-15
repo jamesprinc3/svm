@@ -13,7 +13,6 @@ void dsvm(int speed,
         ru = tmax*(vec[x][2] + vec[y][2] + vec[z][2])/3; \
         rv = tmax*(vec[x][1] + vec[y][1] + vec[z][1])/3; \
         rw = tmax*(vec[x][0] + vec[y][0] + vec[z][0])/3; \
-        //curVec = x;                     \
         printf("Vec %i, %i, %i\n", x, y, z);          \
     } while (0)
 
@@ -44,6 +43,8 @@ int clock6(int num1, int num2);
 int torque_level(int torque_ref, int torque);
 
 int sector_calc(int u_a, int u_b, int speed);
+
+int speed_region(int speed);
 
 struct dir_vector* low_speed_r(int sector, int tl, int fl);
 

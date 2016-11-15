@@ -26,7 +26,7 @@ endif
 UNITY_ROOT=Unity
 C_COMPILER=gcc
 
-CFLAGS=-std=c89
+CFLAGS=-std=c99
 CFLAGS += -Wall
 CFLAGS += -Wextra
 # CFLAGS += -Werror 

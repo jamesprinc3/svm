@@ -1,11 +1,6 @@
 #include "dsvm.h"
 #include "unity.h"
 
-/* These should be ignored because they are commented out in various ways:
-#include "whatever.h" 
-#include "somethingelse.h"
-*/
-
 void setUp(void)
 {
 }
@@ -99,7 +94,7 @@ void test_Speed_Region(void)
 	TEST_ASSERT_EQUAL(0, speed_region(200 ));
 	TEST_ASSERT_EQUAL(1, speed_region(1000));
 	TEST_ASSERT_EQUAL(2, speed_region(1800));
-	
+
 }
 
 void test_Set_Vec(void)
